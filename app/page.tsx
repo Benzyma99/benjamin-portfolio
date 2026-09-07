@@ -1,11 +1,11 @@
 const projects = [
   {
     number: "01",
-    title: "FlyRank Task Management API",
+    title: "LLM-Powered Support Triage API",
     description:
-      "A RESTful CRUD API built with Python and FastAPI during my FlyRank Backend Development Internship.",
-    technologies: ["Python", "FastAPI", "REST API", "CRUD"],
-    github: "https://github.com/Benzyma99/FlyRank-internship-",
+      "An AI-powered backend API built with Python and FastAPI that uses an LLM to classify and route support requests with validation and reliable error handling.",
+    technologies: ["Python", "FastAPI", "LLM API", "REST API"],
+    github: "https://github.com/Benzyma99/flyrank-week7-llm-triage-api",
   },
   {
     number: "02",
@@ -21,11 +21,21 @@ const projects = [
     ],
     github: "https://github.com/Benzyma99/BE-A3-Auth-Login",
   },
+  {
+    number: "03",
+    title: "FlyRank Task Management API",
+    description:
+      "A RESTful CRUD API built with Python and FastAPI during my FlyRank Backend Development Internship.",
+    technologies: ["Python", "FastAPI", "REST API", "CRUD"],
+    github: "https://github.com/Benzyma99/FlyRank-internship-",
+  },
 ];
 
 const skills = [
   "Python",
   "FastAPI",
+  "PostgreSQL",
+  "LLM APIs",
   "TypeScript",
   "Next.js",
   "Supabase",
@@ -78,7 +88,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
-        {/* Background */}
         <div className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[120px]" />
 
@@ -93,7 +102,7 @@ export default function Home() {
               Open to opportunities
             </div>
 
-            {/* Heading */}
+            {/* Name */}
             <h1 className="text-5xl font-bold tracking-[-0.04em] sm:text-7xl lg:text-8xl">
               Benjamin
               <br />
@@ -102,10 +111,17 @@ export default function Home() {
               </span>
             </h1>
 
+            {/* Professional Headline */}
+            <h2 className="mt-8 max-w-3xl text-2xl font-semibold leading-tight text-zinc-200 sm:text-3xl">
+              Back-end AI Engineer building reliable APIs and AI-powered
+              backend systems.
+            </h2>
+
             {/* Introduction */}
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
-              Backend Developer building APIs and practical backend systems
-              with Python, FastAPI, TypeScript and Next.js.
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
+              I build practical backend applications with Python, FastAPI,
+              PostgreSQL and LLM APIs, with a focus on reliable, useful
+              software.
             </p>
 
             {/* Buttons */}
@@ -140,9 +156,9 @@ export default function Home() {
                 {[
                   "Python",
                   "FastAPI",
+                  "PostgreSQL",
+                  "LLM APIs",
                   "TypeScript",
-                  "Next.js",
-                  "Supabase",
                 ].map((technology) => (
                   <span
                     key={technology}
@@ -169,15 +185,14 @@ export default function Home() {
 
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              From learning backend development to shipping real APIs.
+              Building backend systems that solve practical problems.
             </h2>
 
             <p className="leading-8 text-zinc-400">
-              My FlyRank Backend Development Internship gave me the opportunity
-              to turn what I was learning into practical projects. One of my
-              biggest milestones was publishing my first CRUD API on GitHub,
-              which helped me gain confidence in building and documenting
-              backend applications.
+              I am developing my career in back-end AI engineering through
+              hands-on projects and my FlyRank internship. My work focuses on
+              building APIs, integrating AI capabilities, working with
+              databases and learning how to design reliable backend systems.
             </p>
           </div>
         </div>
@@ -284,8 +299,9 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 max-w-xl leading-7 text-zinc-400">
-            I&apos;m interested in backend development, APIs and opportunities
-            where I can continue learning while building useful software.
+            I&apos;m interested in back-end AI engineering, APIs and
+            opportunities where I can continue learning while building useful
+            software.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -313,9 +329,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-zinc-900 px-6 py-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between text-sm text-zinc-600">
-          <span>
-            © {new Date().getFullYear()} Benjamin Emmanuel
-          </span>
+          <span>© {new Date().getFullYear()} Benjamin Emmanuel</span>
 
           <span>Built with Next.js</span>
         </div>
