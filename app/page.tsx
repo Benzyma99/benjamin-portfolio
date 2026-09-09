@@ -51,10 +51,7 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       {/* Navigation */}
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a
-          href="#"
-          className="text-lg font-semibold tracking-tight"
-        >
+        <a href="#" className="text-lg font-semibold tracking-tight">
           Benjamin<span className="text-zinc-500">.</span>
         </a>
 
@@ -62,15 +59,12 @@ export default function Home() {
           <a href="#about" className="transition hover:text-white">
             About
           </a>
-
           <a href="#projects" className="transition hover:text-white">
             Projects
           </a>
-
           <a href="#skills" className="transition hover:text-white">
             Skills
           </a>
-
           <a href="#contact" className="transition hover:text-white">
             Contact
           </a>
@@ -111,7 +105,7 @@ export default function Home() {
               </span>
             </h1>
 
-            {/* Professional Headline */}
+            {/* Headline */}
             <h2 className="mt-8 max-w-3xl text-2xl font-semibold leading-tight text-zinc-200 sm:text-3xl">
               Back-end AI Engineer building reliable APIs and AI-powered
               backend systems.
@@ -124,7 +118,7 @@ export default function Home() {
               software.
             </p>
 
-            {/* Buttons */}
+            {/* Hero Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#projects"
@@ -137,12 +131,39 @@ export default function Home() {
               </a>
 
               <a
+                href="https://github.com/Benzyma99"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-zinc-700 px-7 py-3.5 text-sm font-semibold text-zinc-200 transition hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900"
+              >
+                GitHub ↗
+              </a>
+
+              <a
                 href="https://www.linkedin.com/in/benjamin-emmanuel-48603a25a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-zinc-700 px-7 py-3.5 text-sm font-semibold text-zinc-200 transition hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900"
               >
                 LinkedIn ↗
+              </a>
+
+              <a
+                href="/Benjamin-Emmanuel-Back-end-AI-Engineer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-zinc-700 px-7 py-3.5 text-sm font-semibold text-zinc-200 transition hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900"
+              >
+                View CV ↗
+              </a>
+
+              <a
+                href="https://calendly.com/benemmy2020/new-meeting-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-zinc-700 px-7 py-3.5 text-sm font-semibold text-zinc-200 transition hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900"
+              >
+                Let&apos;s Connect ↗
               </a>
             </div>
 
@@ -174,10 +195,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section
-        id="about"
-        className="border-t border-zinc-900 px-6 py-24"
-      >
+      <section id="about" className="border-t border-zinc-900 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm uppercase tracking-[0.25em] text-zinc-600">
             About me
@@ -199,10 +217,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section
-        id="projects"
-        className="border-t border-zinc-900 px-6 py-24"
-      >
+      <section id="projects" className="border-t border-zinc-900 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm uppercase tracking-[0.25em] text-zinc-600">
             Selected work
@@ -258,10 +273,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section
-        id="skills"
-        className="border-t border-zinc-900 px-6 py-24"
-      >
+      <section id="skills" className="border-t border-zinc-900 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm uppercase tracking-[0.25em] text-zinc-600">
             Technologies
@@ -285,10 +297,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section
-        id="contact"
-        className="border-t border-zinc-900 px-6 py-24"
-      >
+      <section id="contact" className="border-t border-zinc-900 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm uppercase tracking-[0.25em] text-zinc-600">
             Contact
@@ -306,21 +315,19 @@ export default function Home() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://github.com/Benzyma99"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:benemmy2020@gmail.com"
               className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-zinc-200"
             >
-              GitHub ↗
+              Email me →
             </a>
 
             <a
-              href="https://www.linkedin.com/in/benjamin-emmanuel-48603a25a"
+              href="https://calendly.com/benemmy2020/new-meeting-1"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-medium transition hover:border-zinc-500"
             >
-              LinkedIn ↗
+              Let&apos;s Connect ↗
             </a>
           </div>
         </div>
@@ -329,8 +336,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-zinc-900 px-6 py-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between text-sm text-zinc-600">
-          <span>© {new Date().getFullYear()} Benjamin Emmanuel</span>
-
+          <span>© 2026 Benjamin Emmanuel</span>
           <span>Built with Next.js</span>
         </div>
       </footer>
